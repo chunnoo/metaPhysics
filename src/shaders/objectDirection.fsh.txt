@@ -1,0 +1,13 @@
+precision mediump float;
+
+varying vec4 fColor;
+varying vec2 fTexCoord;
+
+uniform float fDrawSize;
+
+void main(void) {
+  vec2 fromCenter = vec2(fTexCoord.x*2.0 - 1.0, fTexCoord.y*2.0 - 1.0);
+  float distFromCenter = length(fromCenter) * fDrawSize;
+  float alpha = 1.0/pow(distFromCenter, 2.0);
+  gl_FragColor = vec4(0.0, clamp(vec2(4.0*alpha), vec2(0.0), fTexCoord), 2.0*alpha);//vec4(0.0, clamp(alpha, 0.0, 0.3), 1.0, 2.0*alpha);
+}

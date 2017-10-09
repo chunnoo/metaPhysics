@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<canvas id="canvas" width="512px" height="512px" id="canvas">
+			canvas error
+		</canvas>
+
+    <div id="shaderSource">
+      <object id="objectVsh" data="src/shaders/object.vsh.txt" type="text/plain"></object>
+      <object id="objectFsh" data="src/shaders/objectDirection.fsh.txt" type="text/plain"></object>
+      <object id="frameVsh" data="src/shaders/frame.vsh.txt" type="text/plain"></object>
+      <object id="frameFsh" data="src/shaders/frameEdge.fsh.txt" type="text/plain"></object>
+    </div>
+
+    <!-- <script src="webgl-debug.js"></script> -->
+
+    <script src="src/vec2.js"></script>
+
+    <script src="src/physics/circle.js"></script>
+    <script src="src/physics/edge.js"></script>
+
+    <script src="src/graphics/shader.js"></script>
+    <script src="src/graphics/webglContext.js"></script>
+    <script src="src/graphics/mesh.js"></script>
+
+    <script src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+for (var i = 0; i < objects.length; i++) {
+  vertices.push(objects[i].center.x - objects[i].size);
+  vertices.push(objects[i].center.y + objects[i].size);
+
+  vertices.push(1.0);
+  vertices.push(1.0);
+  vertices.push(1.0);
+  vertices.push(1.0);
+
+  vertices.push(0.0);
+  vertices.push(1.0);
+
+  vertices.push(objects[i].center.x + objects[i].size);
+  vertices.push(objects[i].center.y + objects[i].size);
+
+  vertices.push(1.0);
+  vertices.push(1.0);
+  vertices.push(1.0);
+  vertices.push(1.0);
+
+  vertices.push(1.0);
+  vertices.push(1.0);
+
+  vertices.push(objects[i].center.x - objects[i].size);
+  vertices.push(objects[i].center.y - objects[i].size);
+
+  vertices.push(1.0);
+  vertices.push(1.0);
+  vertices.push(1.0);
+  vertices.push(1.0);
+
+  vertices.push(0.0);
+  vertices.push(0.0);
+
+  vertices.push(objects[i].center.x - objects[i].size);
+  vertices.push(objects[i].center.y - objects[i].size);
+
+  vertices.push(1.0);
+  vertices.push(1.0);
+  vertices.push(1.0);
+  vertices.push(1.0);
+
+  vertices.push(0.0);
+  vertices.push(0.0);
+
+  vertices.push(objects[i].center.x + objects[i].size);
+  vertices.push(objects[i].center.y + objects[i].size);
+
+  vertices.push(1.0);
+  vertices.push(1.0);
+  vertices.push(1.0);
+  vertices.push(1.0);
+
+  vertices.push(1.0);
+  vertices.push(1.0);
+
+  vertices.push(objects[i].center.x + objects[i].size);
+  vertices.push(objects[i].center.y - objects[i].size);
+
+  vertices.push(1.0);
+  vertices.push(1.0);
+  vertices.push(1.0);
+  vertices.push(1.0);
+
+  vertices.push(1.0);
+  vertices.push(0.0);
+}
